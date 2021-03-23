@@ -38,14 +38,17 @@ import androidx.lifecycle.OnLifecycleEvent
  * https://developer.android.com/guide/components/processes-and-threads
  *
  */
-class DessertTimer(lifecycle : Lifecycle) : LifecycleObserver {
 
+var saveTimer = 0
+
+class DessertTimer(lifecycle : Lifecycle) : LifecycleObserver {
     init{
         lifecycle.addObserver(this)
     }
 
     // The number of seconds counted since the timer started
     var secondsCount = 0
+
 
     /**
      * [Handler] is a class meant to process a queue of messages (known as [android.os.Message]s)
@@ -57,8 +60,11 @@ class DessertTimer(lifecycle : Lifecycle) : LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     fun startTimer() {
         // Create the runnable action, which prints out a log and increments the seconds counter
+        if(saveTimer != 0){
+            this.secondsCount = saveTimer
+        }
         runnable = Runnable {
-            secondsCount++
+            this.secondsCount++
             Timber.i("Timer is at : $secondsCount")
             // postDelayed re-adds the action to the queue of actions the Handler is cycling
             // through. The delayMillis param tells the handler to run the runnable in
@@ -77,5 +83,10 @@ class DessertTimer(lifecycle : Lifecycle) : LifecycleObserver {
         // Removes all pending posts of runnable from the handler's queue, effectively stopping the
         // timer
         handler.removeCallbacks(runnable)
+    }
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
+    fun saveTimer() {
+        saveTimer = secondsCount
     }
 }
