@@ -26,7 +26,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb50cf38-3369-48bd-b68d-e560b3c67804" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/dessertclicker/DessertTimer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/dessertclicker/DessertTimer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/dessertclicker/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/dessertclicker/MainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616480388674</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Menerapkan Lifecycle Observer">
+      <created>1616480710104</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616480710104</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,17 +194,18 @@
     <MESSAGE value="Mempelajari method onCreate dan Logging" />
     <MESSAGE value="Menggunakan Timber untuk Logging" />
     <MESSAGE value="Menggunakan Timer pada Lifecycle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menggunakan Timer pada Lifecycle" />
+    <MESSAGE value="Menerapkan Lifecycle Observer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menerapkan Lifecycle Observer" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="751" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1616479710268">
+    <state x="751" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1616480780370">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="751" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1616479710268" />
-    <state x="512" y="94" key="CommitChangelistDialog2" timestamp="1616480384384">
+    <state x="751" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1616480780370" />
+    <state x="512" y="94" key="CommitChangelistDialog2" timestamp="1616480705621">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="512" y="94" key="CommitChangelistDialog2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1616480384384" />
+    <state x="512" y="94" key="CommitChangelistDialog2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1616480705621" />
     <state width="938" height="239" key="GridCell.Tab.0.bottom" timestamp="1616429300633">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -219,9 +226,9 @@
     </state>
     <state width="938" height="239" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1616429300633" />
     <state width="670" height="239" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1616420157489" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1616480397516">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1616480712897">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1616480397516" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1616480712897" />
   </component>
 </project>
